@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Marketing e Projetos</title>
+    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="CSS/animacao.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <span class="logo">ZManager</span>
+        <a href="#"onclick="window.location.reload()">Home</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <header>
+        <h2>Bem-vindo à nossa agência</h2>
+        <h3>Tecnologias e negócios digitais</h3>   
+        <div class="chamada"><a href="#contato">Marque uma visita...</a></div>
+    </header>
+    <section id="servicos">
+        <h2 class="titulo">SERVIÇOS</h2>
+        <div class="borda"></div>
+        <h3 class="subtitulo">Descubra o que podemos fazer por você e por sua empresa!</h3>
+        <article>
+            <p class="iconserv"><i class="fa fa-shopping-cart"></i></p>
+        </article>
+        <article>
+            <p class="iconserv"><i class="fa-brands fa-grav"></i></p>
+        </article>
+        <article>
+            <p class="iconserv"><i class="fa fa-bath"></i></p>
+        </article>
+    </section>
+    <section id="portfolio">
+        <h2 class="titulo">PORTFÓLIO</h2>
+        <div class="borda"></div>
+        <h3 class="subtitulo">Conheça nossos projetos e negócios.</h3>
+        <article>
+            <img src="imagens/roundicons.png" alt="">
+        </article>
+        <article>
+            <img src="imagens/startup-framework.png" alt="">
+        </article>
+        <article>
+            <img src="imagens/treehouse.png" alt="">
+        </article>
+    </section>
+    <section id="empresa">
+        <h2 class="titulo">EMPRESA</h2>
+        <div class="borda"></div>
+        <h3 class="subtitulo">Desde 1973 criando soluções para empresas e negócios</h3>
+        <div class="carrossel">
+            <span class="missao"><strong>Missão</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem excepturi nobis officiis vitae consequatur rem saepe, blanditiis, expedita ipsa sed eligendi cum quidem reprehenderit tempore exercitationem nesciunt ipsum ea nostrum!</span>
+           
+            <span class="visao"><strong>Visão</strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum illo veritatis saepe vel amet quo sunt. Necessitatibus pariatur facere enim amet ex repudiandae dolorum, cumque nisi molestias cum accusamus inventore! </span>
+
+            <span class="valores"><strong>Valores</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa enim pariatur tempore optio, rerum aut odit iure, a ab possimus doloribus cumque aliquid? Eveniet inventore officiis provident nam consequatur. </span>
+            <a class="anterior">&#10094</a>
+            <a class="posterior">&#10095</a>
+        </div>
+        <script>
+            var index = 0;
+            elementos();
+
+            function elementos(){
+                var i;
+                var elements=document.getElementsByClassName("carrossel")[0].getElementsByTagName("span");
+                var anterior = document.getElementsByClassName("anterior")[0];
+                var posterior = document.getElementsByClassName("posterior")[0];
+
+                for (i = 0; i < elements.length;i++){
+                elements[i].classList.remove("active");
+                }
+                index++;
+                if (index > elements.length){ 
+                    index = 1;
+                }
+                // se a variavel index for maior que a quantidade de itens, mudar o valor da variável para 1.
+                elements[index - 1].classList.add("active");
+                // o elemento atual do carrossel.
+                anterior.onclick = function(){
+                    index -= 2;
+                    //quando a seta de voltar for clicada decrementa 2, para voltar ao elemento anterior.
+                    elementos();
+                }
+                posterior.onclick = function(){
+                    elementos();
+                }
+            }
+            setInterval(elementos, 10000);
+        </script>   
+    
+    </section>
+    <section id="equipe">
+        <h2 class="titulo">NOSSA EQUIPE</h2>
+        <div class="borda"></div>
+        <h3 class="subtitulo">Temos os melhores profissionais do mercado para melhor atendê-lo.</h3>
+        <article>
+            <img src="imagens/1.jpg" alt="">
+            <p class="nome">Claudia Campos Salles</p>
+            <p class="cargo">Social Media</p>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+        </article>
+       
+        <article>
+            <img src="imagens/2.jpg" alt="">
+            <p class="nome">Roberto Alberto</p>
+            <p class="cargo">Programador</p>
+            <a href="https://instagram.com/@jcruqui"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+        </article>
+        <article>
+            <img src="imagens/3.jpg" alt="">
+            <p class="nome">Letícia Hover</p>
+            <p class="cargo">Design Gráfica</p>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+        </article>
+    </section>
+    <section id="contato">
+        <h2 class="titulo">FALE CONOSCO</h2>
+        <div class="borda"></div>
+        <h3 class="subtitulo">Preencha o formulário abaixo, que brevemente entraremos em contato.</h3>
+        <article>
+            <form>
+                <input type="text" placeholder="Seu nome" class="campo" required>
+                <input type="email" placeholder="Seu melhor e-mail"  class="campo" required>
+                <input type="text" placeholder="Seu telefone" class="campo">
+                <input type="text" placeholder="Assunto" class="campo" required>
+                <textarea rows="7" placeholder="Escreva sua mensagem aqui..." class="campo" required></textarea>
+                <input type="submit" value="Enviar" class="botao">
+            </form>
+        </article>
+    </section>
+   <footer>
+    <div class="social">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <div class="link">
+        <h4>Links</h4>
+        <a href="#"onclick="window.location.reload()">Home</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+    </div>
+    <div class="info">
+       <h4>Endereço e Telefone</h4>
+       <ul>
+            <li>Rua Calixto Razolini, 215</li>
+            <li>Curitiba - Pr</li>
+            <li>Cep:80.000-000</li>
+            <li>Fone: (11) 9999-8888</li>
+       </ul>
+    </div>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.8667492713676!2d-49.2972625880871!3d-25.476124534626344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce39d80f86acb%3A0x27fa74bd4c5df78b!2sFaculdade%20Senac%20Curitiba%20Port%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1687869418220!5m2!1spt-BR!2sbr" width="250" height="150" style="border:2px solid rgb(249, 225, 3);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+</footer>
+    <hr>
+    <div class="direitos">
+        <span>&copy; Todos os direitos reservados a José Carlos Cruqui</span>
+    </div>
+</body>
+</html>

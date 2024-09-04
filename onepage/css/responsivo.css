@@ -1,0 +1,21 @@
+@media (max-width: 480px) { .menu { display: block;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        background-color: #333;
+        text-align: justify;
+        width: 30%;
+        height: 0;
+        z-index: 1;
+        margin-left: -10%;
+        visibility: hidden;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .menu a { padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.06rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+    }
+}

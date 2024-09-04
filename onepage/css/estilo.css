@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+body,html{
+    width:100%;
+    height: 100%;
+    margin:0;
+    color:#666666;
+    font-size:16px;
+}
+nav{
+    position: absolute;
+    width:100%;
+    background-color: #333333;
+    text-align: center;
+    position:fixed;
+    z-index:1;
+    
+ }
+nav a{
+    color:#FFFFFF;
+    display: inline-block;
+    padding: 0.5% 1.5% 1.5%;
+    margin-top: 1%;
+    letter-spacing: 1.2px;
+    border-top: 3px solid transparent;
+}
+nav a:hover{
+    color: #FFCE00;
+    border-color:#FFCE00;
+}
+header{
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagens/header-bg.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    position:relative;
+    background-attachment: fixed;
+}
+header h2{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color:#FFFFFF;
+    top:35%;
+    font-size: 46px;
+    animation-name:headerH2-moverParaDireita;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+header h3{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    color:#FFFFFF;
+    top:45%;
+    font-size: 36px;
+    font-weight: lighter;
+    animation-name: headerH3-moverParaEsquerda;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+section{
+    width:100%;
+    height: 100%;
+    padding-top:6%;
+}
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.borda{
+    width:8%;
+    margin:auto;
+    border-bottom: 2px solid #FFCE00;
+    padding-top: 0.3%;
+}
+.subtitulo{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 1%;
+}
+#servicos article, #portfolio article, #equipe article{
+    width:30%;
+    margin-left: 3%;
+    float:left;
+    text-align: center;
+    margin-top: 5%;
+}
+.iconserv{
+    width:180px;
+    height: 180px;
+    background-color: #FFCE00;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s; 
+    border: 3px solid; 
+}
+.iconserv:hover{
+    transform:rotate(360deg);
+    background-color: #666666;
+    color: #FFCE00;
+}
+#portfolio, #equipe{
+    background-color: #000000;
+    color:#FFFFFF;
+}
+#portfolio article img{
+    width:100%;
+    border-radius: 16px;
+    border: 3px solid #FFCE00;
+    filter: blur(8px);
+    transform:scale(0.9);
+    transition: 0.5s;
+}
+#portfolio article img:hover{
+    width:100%;
+    border-radius: 16px;
+    border: 3px solid #FFCE00;
+    filter: blur(0);
+    transform:scale(1.1);
+}
+#equipe article img{
+    border-radius: 15%;
+    --deg:0;
+    transition:--deg 1s ease-in-out;
+    transform:rotate(calc(var(--deg)*1deg));
+}
+#equipe article img:hover{
+    --deg:10;
+}
+.nome{
+    font-weight: 700;
+    margin-top: 5%;
+    font-size: 20px;
+}
+.cargo{
+    margin-bottom: 3%;
+}
+#equipe article a{
+    color:#FFFFFF;
+    font-size: 33px;
+    padding-left: 20px;
+}
+#equipe article a:hover{
+    color:#FFCE00;
+}
+#contato article{
+    width: 60%;
+    height: 70%;
+    float:left;
+    margin-top: 1%;
+    padding:2%;
+    margin-left: 400px;
+}
+.campo{
+    width:100%;
+    margin-bottom: 2px;
+    padding: 2%;
+    font-size:20px;
+    background-color: #d6d2d2 ;
+    color:#FFFFFF;
+    outline: none;
+    resize:none;
+    border-radius: 8px;
+}
+::-webkit-input-placeholder{
+    color:#FFFFFF;
+}
+.botao{
+    width: 100%;
+    padding:2%;
+    background-color: #333333;
+    color: #FFFFFF;
+    border:none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 20px;
+}
+textarea{
+    border:2px solid #000000;
+}
+.botao:hover{
+    background-color: #c2c0c0;
+    color: #000000;
+}
+.logo{
+    background-color: #FFCE00;
+    color:#000000;
+    font-size:25px;
+    font-weight: bold;
+    border-radius: 40px;
+    padding:10px;
+    margin-right: 100px;
+    border:2px solid #040000;
+    box-shadow: rgba(255, 254, 254, 0.56) 0px 22px 70px 4px;
+    margin-left: -300px;
+    text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+}
+.chamada{
+    text-decoration: none;
+    position:absolute;
+    width: 30%;
+    height: 10%;
+    text-align: center;
+    color:#FFFFFF;
+    top:60%;
+    margin-left:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chamada a{
+    color:#FFFFFF;
+    font-size: 110%;
+    padding:10px 70px;
+    font-weight: 600px;
+    background-color: #666666;
+    border:2px solid #FFFFFF;
+    border-radius: 50px;
+   animation-name:headerA-moverParaCima;
+   animation-duration: 1s;
+   animation-delay: 1s;
+   animation-timing-function: ease-out;
+   animation-fill-mode: backwards;
+}
+footer{
+    width: 100%;
+    height: 40%;
+    background-color: #000000;
+    color:#FFFFFF;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+}
+.social{
+    width: 30%;
+    text-align: center;
+    padding-left: 80px;
+}
+.social a{
+    color:#FFFFFF;
+    font-size: 40px;
+    padding-right:15px ;
+}
+.link{
+    display:flex;
+    flex-direction: column;
+  }
+.link a{
+    color:#FFFFFF;
+    font-size: 18px;
+    padding-right:10px ;
+}
+.link h4{
+    color:#FFCE00;
+    font-size: 25px;
+}
+.info{
+    width: 50%;
+    font-size: 20px;
+}
+.info li{
+    list-style: none;
+    text-align: center;
+}
+.info h4{
+   padding-left: 270px; 
+   color: #FFCE00;
+}
+.mapa{
+    padding-right: 350px;
+}
+footer hr{
+      width:50%
+}
+.direitos{
+    background-color: #666565;
+    color:#FFFFFF;
+    font-size: 25px;
+    text-align: center;
+    height:50px;
+    padding-top: 10px;
+}
+.carrossel{
+    width: 900px;
+    position:relative;
+    margin:auto;
+    text-align: justify;
+    overflow: hidden;
+    padding:80px;
+}
+.carrossel span{
+    width:100%;
+    height: auto;
+    display:none;
+    font-size: 30px;
+    padding: 20px;
+}
+.carrossel span.active{
+    display: block;
+}
+.carrossel .anterior, .carrossel .posterior{
+    position: absolute;
+    top:50%;
+    font-size: 30px;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    background-color: #333333;
+    padding:10px;
+    cursor:pointer;
+    transition: left 0.4s;
+}
+.carrossel .anterior{
+    left:10px;
+    margin-right:100px;
+}
+.carrossel .posterior{
+    right: 10px;
+    margin-left: 100px;
+}
+strong{
+    color:red;
+    font-size:40px;
+}
+
+
+

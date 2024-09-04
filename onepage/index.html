@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page - Agência de marketing e projetos</title>
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="index.html">ZmanagerZ</a>
+
+        <a href="index.html">Página Inicial</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#empresa">Empresa</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <header>
+        <h2>Bem-vindo à nossa agência</h2>
+
+        <h3>Tecnologias e negócios digitais</h3>
+
+        <div class="chamada">
+            <a href="#contato">Marque uma visita...</a>
+        </div>
+    </header>
+
+    <section id="servicos">
+        <h2 class="titulo">SERVIÇOS</h2>
+
+        <div class="borda">
+
+        </div>
+
+        <h3 class="subtitulo">Descubra o que podemos fazer por você e por sua empresa!</h3>
+
+        <article>
+            <p class="iconserv">
+                <img src="../imagens/carrinho.png" alt="">
+            </p>
+
+            <h3 class="servicosTextos">
+                Aumente suas vendas através das nossas técnicas e serviços personalizados.
+            </h3>
+        </article>
+        
+        <article>
+            <p class="iconserv">
+                <img src="../imagens/servico.png" alt="">
+            </p>
+
+            <h3 class="servicosTextos">
+                Descubra novos caminhos e espaços, indo além da via láctea.
+            </h3>
+        </article>
+        
+        <article>
+            <p class="iconserv">
+                <img src="../imagens/chaves.png" alt="">
+            </p>
+
+            <h3 class="servicosTextos">
+                Também vendemos mobilia para banheiros.
+            </h3>
+        </article>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="titulo">PORTFÓLIO</h2>
+        <div class="borda"></div>
+
+        <h3 class="subtitulo">Conheça os nossos projetos e negócios.</h3>
+
+        <article>
+            <img src="../imagens/roundicons.png" alt="" onmouseenter="portfolioTextos('roundiconspr')" onmouseleave="esconderTextos('roundiconspr')">
+            <!-- Não se esqueça das aspas na hora de dar nome a um parâmetro! -->
+
+            <div id="roundiconsid" class="portfolioTextoscl"></div>
+        </article>
+
+        <article>
+            <img src="imagens/startup-framework.png" alt="" onmouseenter="portfolioTextos('frameworkpr')" onmouseleave="esconderTextos('frameworkpr')">
+
+            <div id="frameworkid" class="portfolioTextoscl"></div>
+        </article>
+
+        <article>
+            <img src="imagens/treehouse.png" alt="" onmouseenter="portfolioTextos('treehousepr')" onmouseleave="esconderTextos('treehousepr')">
+
+            <div id="treehouseid" class="portfolioTextoscl"></div>
+        </article>
+    </section>
+
+    <section id="empresa">
+        <h2 class="titulo">EMPRESA</h2>
+        <div class="borda"></div>
+
+        <h3 class="subtitulo">Desde 1500, a nossa empresa é a lider no desenvolvimento de soluções para as mais varíadas questões empresariais, abrangindo desde o comércio de naus para o desenvolvimento de inteligência artificial.</h3>
+
+        <article>
+            <h2 class="subsubtitulo">MISSÃO</h2>
+                <p class="descricao">
+                    Entregar os melhores resultados possíveis sem abrir mão da qualidade de vida de nossos colaboradores.
+                    <br>
+
+                </p>
+        </article>
+
+        <article>
+            <h2 class="subsubtitulo">VISÃO</h2>
+                <p class="descricao">
+                    Ser uma agência reconhecida pelo governo Chinês como uma empresa amigável aos ideiais de Xi Xiping e seu pensamento para com o Socialismo com Características Chinesas para uma Nova Era.
+                </p>
+        </article>
+
+        <article>
+            <h2 class="subsubtitulo">VALORES</h2>
+                <ul class="descricao">
+                    <li>Responsabilidade.</li>
+                    <li>Cuidado especial com cada cliente.</li>
+                    <li>Não manipular os clientes para fazê-los gastar mais, abusando de sua fraqueza.</li>
+                    <li>Sustentabilidade, óbvio.</li>
+                </ul>
+        </article>
+
+        <article class="carrossel">
+            <h2 class="subsubtitulo"><a href="#carrossel">Página alternativa</a></h2>
+        </article>
+    </section>
+
+    <section id="equipe">
+        <h2 class="titulo">NOSSA EQUIPE</h2>
+        <div class="borda"></div>
+
+        <h3 class="subtitulo">Temos os melhores profissionais do mercado a disposição para atendê-lo.</h3>
+
+        <article>
+            <img src="imagens/1.jpg" alt="">
+            <p class="nome">Fernanda Tavares</p>
+            <p class="cargo">Gerenciadora de redes sociais</p>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </article>
+
+        <article>
+            <img src="imagens/2.jpg" alt="">
+            <p class="nome">Luis Marcelo</p>
+            <p class="cargo">Programador</p>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </article>
+
+        <article>
+            <img src="imagens/3.jpg" alt="">
+            <p class="nome">Bianca do Rocio</p>
+            <p class="cargo">Designer gráfico</p>
+
+            <a href="https://hololivepro.com">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </article>
+    </section>
+
+    <section id="contato">
+        <h2 class="titulo">FALE CONOSCO</h2>
+        <div class="borda"></div>
+
+        <h3 class="subtitulo">Preencha o formulário abaixo com suas dúvidas ou sugestões e brevemente responderemos.</h3>
+
+        <article>
+            <form>
+                <input type="text" placeholder="Seu nome" required class="campo">
+
+                <input type="email" placeholder="Seu melhor e-mail" required class="campo">
+
+                <input type="tel" class="campo" placeholder="Seu telefone">
+
+                <input type="text" placeholder="Assunto a ser tratado" class="campo" required>
+
+                <textarea rows="7" placeholder="Escreva sua mensagem aqui..." class="campo" required>
+                </textarea>
+
+                <input type="submit" value="Enviar" class="botao">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>
+            Agência ZmanagerZ
+        </p>
+
+        <p>
+            <i class="fa-solid fa-map-location-dot"></i>
+            
+            <a href="https://goo.gl/maps/r3uVx7Q8tr3n5EdY8">
+                Avenida Silva Jardim, 100 - Curitiba-PR
+            </a>
+        </p>
+
+        <p>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+5541981310000">(41) 98131-0000</a>
+        </p>
+        
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            
+            <a href="mailto:agenciazmanager@mail.com">agenciazmanager@mail.com
+            </a>
+        </p>
+
+        <p>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+
+            Siga nossas redes!
+        </p>
+    </footer>
+
+    <section id="carrossel">
+        <h2 class="titulo">EMPRESA</h2>
+        <div class="borda"></div>
+
+        <h3 class="subtitulo">Desde 1500, a nossa empresa é a lider no desenvolvimento de soluções para as mais varíadas questões empresariais, abrangindo desde o comércio de naus para o desenvolvimento de inteligência artificial.</h3>
+
+        <div class="carrosselprof">
+            <span class="missao">
+                <strong>Missão</strong>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, fuga autem! Veniam placeat facilis dignissimos nulla aspernatur ipsam expedita voluptates esse, perferendis architecto debitis, accusamus vero necessitatibus dolorem in! Repellendus.
+            </span>
+
+            <span class="visao">
+                <strong>Visão</strong>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quo quidem, dicta ea autem cumque voluptas at, ratione aliquid eaque id! Necessitatibus neque sed aspernatur perspiciatis. Cupiditate molestiae ducimus saepe.
+            </span>
+
+            <span class="valores">
+                <strong>Valores</strong>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam ratione iure repudiandae incidunt id voluptates ducimus dolores voluptatem vero, cupiditate quasi rem laudantium exercitationem aliquid nostrum similique saepe perspiciatis nobis.
+            </span>
+
+            <a class="anterior">&#10094;</a>
+            <a class="posterior">&#10095;</a>
+        </div>
+    </section>
+
+    <script src="js/script.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+@media (max-width:480px){
+.menu{
+    display:block;
+    position: absolute;
+    top:3.3rem;
+    left: 0;
+    background-color: #333333;
+    text-align: justify;
+    width:30%;
+    height:0;
+    z-index: 1;
+    margin-left: -10%;
+    visibility: hidden;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu a{
+    padding: 1rem 0;
+    margin-inline:1rem;
+    border-bottom: 0.06rem solid rgba(0, 0, 0, 0.16);
+    border-radius:0;
+}
+.label-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .checkbox:checked ~ .menu {
+    height: calc(100vh - 4.6875rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .checkbox:checked ~ .label-menu .hamburger {
+    border-top-color: transparent;
+  }
+  .checkbox:checked ~ .label-menu .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .checkbox:checked ~ .label-menu .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+  /* responsividade da página inicial */
+  header{
+    width:480px;
+  }
+  header h2{
+    font-size: 30px;
+    color:yellow;
+    text-shadow: black 0.1em 0.1em 0.2em
+  }
+header h3{
+    font-size: 20px;
+    text-shadow: black 0.1em 0.1em 0.2em
+  }   
+.chamada{
+    width: 40%;
+    height: 7%;
+}
+.chamada a{
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 80%;
+    padding:5px 10px;
+    font-weight: 300px;
+    background-color:  #FFCE00;
+    border:2px solid #000;
+    border-radius: 50px;
+}
+#servicos article, #portfolio article, #equipe article{
+    width:25%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+/* titulos e subtitulos*/
+.titulo{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8%;
+}
+.subtitulo{
+    font-size: 14px;
+    font-weight: 300;
+   }
+/* responsividade da seção serviços */
+.iconserv{
+    width:100px;
+    height:100px;
+    margin-left: 40px; 
+    font-size: 50px;
+   }
+.iconserv:hover{
+    transform:rotate(360deg);
+    background-color: #666666;
+    color: #FFCE00;
+}
+/* responsividade da seção empresas */
+.carrossel{
+  width: 400px;
+  padding:30px;
+}
+.carrossel span{
+  width:100%;
+  font-size: 18px;
+  padding: 10px;
+}
+.carrossel .anterior, .carrossel .posterior{
+  font-size: 10px;
+  padding:10px;
+}
+strong{
+  font-size:20px;
+}
+/* responsividade da seção equipe */
+#equipe article a{
+  font-size: 16px;
+}
+#equipe article img{
+  width: 80%;
+}
+.nome{
+  font-weight: 500;
+  font-size: 14px;
+}
+/* responsividade da seção contato */
+#contato article{
+  width: 80%;
+  height: 50%;
+  margin-left: 40px;
+}
+/* responsividade do footer */
+footer{
+margin-bottom: -600px ;
+}
+.social{
+  width: 10%;
+  display:flex;
+  flex-direction: column;
+  margin-left: -230px;
+/*   align-items:flex-start; */
+}
+.social a{
+  color:#FFFFFF;
+  font-size: 12px;
+ /*  padding-right:0.5px ; */
+}
+
+.link a{
+  color:#FFFFFF;
+  font-size: 12px;
+  padding-right:10px ;
+  margin-left: 30px;
+}
+.link h4{
+  font-size: 10px;
+  margin-left: 28px;
+}
+.info{
+  width: 30%;
+  font-size: 10px;
+/*   margin-left: -10px; */
+}
+
+.info h4{
+ padding-left: 39px; 
+}
+.mapa{
+  padding-right: 10px;
+}
+
+.direitos{
+  background-color: #666565;
+  color:#FFFFFF;
+  font-size: 15px;
+  text-align: center;
+  height:40px;
+  margin-top: 230px;
+  padding-top: 5px;
+}
+footer hr{
+  width:50%;
+}
+.responsivo {
+  position: absolute;
+  margin-left: 50px;
+  width:30%;
+  height: 25%;
+  margin-top: -60px;
+ 
+}
+.mapa{
+  padding-right: 130px;
+
+}
+
+
+}
